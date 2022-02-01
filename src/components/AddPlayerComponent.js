@@ -7,11 +7,10 @@ import { addPlayer } from '../redux/actions/playersActions'
 function AddPlayerComponent(props) {
     const dispatch = useDispatch();
     const [player, setPlayer] = useState({
-        teamId: 1,
+        knum: 1,
         name: "",
         weight: 0,
         height: 0,
-        position: 'Įžaidėjas'
     })
     const playersReducer = useSelector((state) => state.playersReducer)
     const onBack = () => {
@@ -59,6 +58,9 @@ function AddPlayerComponent(props) {
                 </Form.Item>
                 <Form.Item key="weight" name="weight" label="Svoris (kg)">
                     <InputNumber required style={{ width: '100%' }} placeholder="Įrašykite svorį (kg)" value={player.weight} onChange={(e) => onDataChange(e, "weight")} />
+                </Form.Item>
+                <Form.Item key="weight" name="weight" label="K">
+                    <InputNumber required style={{ width: '100%' }} placeholder="Įrašykite k" value={player.knum} onChange={(e) => onDataChange(e, "knum")} />
                 </Form.Item>
             </Form>
         </Modal>
