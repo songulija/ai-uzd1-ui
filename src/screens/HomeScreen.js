@@ -36,14 +36,14 @@ function HomeScreen() {
         <p>{text.sport.title}</p>
       )
     },
-    {
-      title: 'Komanda',
-      dataIndex: 'team',
-      width: '20%',
-      render: (text, record, index) => (
-        <p>{text.title}</p>
-      )
-    },
+    // {
+    //   title: 'Komanda',
+    //   dataIndex: 'team',
+    //   width: '20%',
+    //   render: (text, record, index) => (
+    //     <p>{text.title}</p>
+    //   )
+    // },
     {
       title: 'Vardas pavarde',
       dataIndex: 'name',

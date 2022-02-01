@@ -59,7 +59,7 @@ function AddPlayerComponent(props) {
                 <Form.Item key="weight" name="weight" label="Svoris (kg)">
                     <InputNumber required style={{ width: '100%' }} placeholder="Įrašykite svorį (kg)" value={player.weight} onChange={(e) => onDataChange(e, "weight")} />
                 </Form.Item>
-                <Form.Item key="weight" name="weight" label="K">
+                <Form.Item key="knum" name="knum" label="K">
                     <InputNumber required style={{ width: '100%' }} placeholder="Įrašykite k" value={player.knum} onChange={(e) => onDataChange(e, "knum")} />
                 </Form.Item>
             </Form>
